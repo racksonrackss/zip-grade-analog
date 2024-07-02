@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZipGradeAnalog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A500%2C700" />
+    <link rel="stylesheet" href="/ZipGradeAnalog/style.css">
+    <script defer src="/ZipGradeAnalog/script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <button class="button add__test__button" onclick="showCreateTestForm()">+ Создать Тест</button>
+
+        <div class="profile">
+            <div class="image">
+                <img src="/ZipGradeAnalog/assets/user-photo.png" alt="аватарка">
+            </div>
+
+            <div class="user__data">
+                <ul>
+                    <li>Имя</li>
+                    <li>Статус</li>
+                    <li>Id</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="blackbar">
+            <button class="button answers__forms__button">Бланки Ответов</button>
+        </div>
+    </div>
+
+    <div class="my__classes">
+        <div class="my__classes__title">
+            <p>Мои Классы</p>
+        </div>
+
+        <div class="classes__list">
+            <div class="class__name__column">
+                <p><strong>Название</strong></p>
+                <div class="class__name__list" id="class-name-list">
+                </div>
+            </div>
+
+            <div class="student__count__column">
+                <p><strong>Кол-Во</strong></p>
+                <div class="student__count__list" id="student-count-list">
+                </div>
+            </div>
+
+            <div class="add__student__buttons">
+                <p><strong>&nbsp;</strong></p>
+                <div class="add__student__buttons__list" id="add-student-buttons-list">
+                </div>
+            </div>
+
+            <div class="delete__class__buttons">
+                <p><strong>&nbsp;</strong></p>
+                <div class="delete__class__buttons__list" id="delete-class-buttons-list">
+                </div>
+            </div>
+        </div>
+
+        <div class="students__list">
+        </div>
+
+        <button class="button add__class__button" onclick="showAddClassForm()">Добавить Класс</button>
+    </div>
+
+    <div class="add__class__form" id="add-class-form">
+        <div class="add__class__title">
+            <p>Создание Класса</p>
+        </div>
+
+        <input type="text" placeholder="Название" class="input class__name__input" id="class-name">
+        <input type="text" placeholder="Кол-Во Учащихся В Классе" class="input students__count__input" id="students-count">
+
+        <button class="button create__class__button" onclick="addClass()">Создать</button>
+        <span class="close" onclick="closeAddClassForm()">&times;</span>
+    </div>
+
+    <div class="add__student__form" id="add-student-form">
+        <div class="add__student__title">
+            <p>Добавить Ученика</p>
+        </div>
+
+        <input type="text" placeholder="Имя" class="input student__name__input" id="student-name">
+        <input type="text" placeholder="Id Ученика" class="input student__id__input" id="student-id">
+
+        <button class="button add__student__button">Добавить</button>
+        <span class="close" onclick="closeAddStudentForm()">&times;</span>
+    </div>
+
+    <div class="create__test__form" id="create-test-form">
+        <div class="create__test__title">
+            <p>Создание Теста</p>
+        </div>
+
+        <div class="classes__dropdown">
+            <button class="button classes__dropdown__button">Классы</button>
+            <div class="classes__dropdown__content">
+            </div>
+        </div>
+
+        <input type="text" placeholder="Название" class="input test__name__input">
+
+        <div class="questions__number__dropdown">
+            <button class="button questions__number__dropdown__button">Кол-Во Вопросов</button>
+            <div class="questions__number__dropdown__content">
+                <a>20 Вопросов</a>
+                <a>40 Вопросов</a>
+                <a>60 Вопросов</a>
+            </div>
+        </div>
+
+        <button class="button create__test__button">Создать</button>
+        <span class="close" onclick="closeCreateTestForm()">&times;</span>
+    </div>
+</body>
+</html>

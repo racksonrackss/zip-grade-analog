@@ -1,0 +1,455 @@
+body {
+    background: #E7EBF0E5;
+    margin: 0px;
+    font-family: Roboto, 'Source Sans Pro';
+}
+
+.button {
+    background-color: #E7EBF0;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Roboto, 'Source Sans Pro';
+    border: none;
+}
+
+.button:hover {
+    background-color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header {
+    width: 1920px;
+    height: 145px;
+    position: relative;
+}
+
+.add__test__button {
+    width: 224px;
+    height: 60px;
+    top: 44px;
+    left: 1312px;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.profile {
+    width: 300px;
+    height: 145px;
+    left: 1572px;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    width: 118.56px;
+    height: 115.98px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.image img {
+    width: 118.56px;
+    height: 115.98px;
+}
+
+.user__data {
+    width: 72.81px;
+    height: 59.65px;
+    position: absolute;
+    top: 44px;
+    left: 192px;
+}
+
+.profile ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blackbar {
+    background: black;
+    height: 100px;
+    top: 145px;
+    position: relative;
+}
+.answers__forms__button {
+    width: 250px;
+    height: 60px;
+    top: 20px;
+    left: 71px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.my__classes {
+    position: relative;
+    width: 800px;
+    height: 650px;
+    top: 150px;
+    left: 59px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my__classes__title {
+    width: 250px;
+    height: 52px;
+    top: 75px;
+    left: 76px;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+}
+
+.classes__list {
+    width: 310px;
+    height: 320px;
+    position: absolute;
+    top: 154px;
+    left: 36px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.class__name__column {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    height: 51px;
+    width: 100px;
+    text-align: center;
+}
+
+.class__name__list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.class__name__list a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.class__name__list a:hover {
+    background-color: #BBBBBB;
+}
+
+.student__count__column {
+    position: absolute;
+    left: 115px;
+    top: 15px;
+    height: 51px;
+    width: 100px;
+    text-align: center;
+}
+
+.student__count__list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.student__count__list a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.add__student__buttons {
+    position: absolute;
+    left: 215px;
+    top: 15px;
+    height: 51px;
+    width: 40px;
+    text-align: center;
+}
+
+.add__student__buttons__list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.add__student__buttons__list a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.delete__class__buttons {
+    position: absolute;
+    left: 255px;
+    top: 15px;
+    height: 51px;
+    width: 40px;
+    text-align: center;
+}
+
+.delete__class__buttons__list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.delete__class__buttons__list a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.students__list {
+    width: 370px;
+    height: 320px;
+    position: absolute;
+    top: 154px;
+    left: 389px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add__class__button {
+    width: 224px;
+    height: 60px;
+    top: 540px;
+    left: 257px;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.add__class__form {
+    display: none;
+    position: absolute;
+    width: 750px;
+    height: 650px;
+    top: 295px;
+    left: 1111px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add__class__title {
+    width: 250px;
+    height: 52px;
+    top: 93px;
+    left: 250px;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+}
+
+.create__class__button {
+    width: 150px;
+    height: 60px;
+    top: 540px;
+    left: 301px;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.input {
+    border-radius: 10px;
+    border: 1px solid #E7EBF0;
+    background-color: #E7EBF0;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.class__name__input {
+    width: 427px;
+    height: 38px;
+    top: 187px;
+    left: 162px;
+}
+
+.students__count__input {
+    width: 427px;
+    height: 38px;
+    top: 253px;
+    left: 162px;
+}
+
+.add__student__form {
+    display: none;
+    position: absolute;
+    width: 750px;
+    height: 420px;
+    top: 293px;
+    left: 990px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add__student__title {
+    width: 250px;
+    height: 52px;
+    top: 60px;
+    left: 250px;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+}
+
+.student__name__input {
+    width: 427px;
+    height: 38px;
+    top: 154px;
+    left: 162px;
+}
+
+.student__id__input {
+    width: 427px;
+    height: 38px;
+    top: 220px;
+    left: 162px;
+}
+
+.add__student__button {
+    width: 150px;
+    height: 60px;
+    top: 300px;
+    left: 301px;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.create__test__form {
+    display: none;
+    position: absolute;
+    width: 750px;
+    height: 650px;
+    top: 295px;
+    left: 1111px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create__test__title {
+    width: 250px;
+    height: 52px;
+    left: 250px;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+}
+
+.classes__dropdown {
+    display: inline-block;
+}
+
+.classes__dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.classes__dropdown a:hover {
+    background-color: #BBBBBB;
+}
+
+.classes__dropdown__button {
+    width: 427px;
+    height: 38px;
+    top: 67px;
+    left: 161px;
+    position: absolute;
+    font-size: 18px;
+    text-align: left;
+}
+
+.classes__dropdown__content {
+    display: none;
+    position: absolute;
+    width: 427px;
+    height: 138px;
+    top: 105px;
+    left: 161px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.classes__dropdown:hover .classes__dropdown__content {
+    display: block;
+}
+
+.test__name__input {
+    width: 427px;
+    height: 38px;
+    top: 288px;
+    left: 162px;
+}
+
+.questions__number__dropdown {
+    display: inline-block;
+}
+
+.questions__number__dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.questions__number__dropdown a:hover {
+    background-color: #BBBBBB;
+}
+
+.questions__number__dropdown__button {
+    width: 427px;
+    height: 38px;
+    top: 346px;
+    left: 161px;
+    position: absolute;
+    font-size: 18px;
+    text-align: left;
+}
+
+.questions__number__dropdown__content {
+    display: none;
+    position: absolute;
+    width: 427px;
+    height: 138px;
+    top: 384px;
+    left: 161px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.questions__number__dropdown:hover .questions__number__dropdown__content {
+    display: block;
+}
+
+.create__test__button {
+    width: 150px;
+    height: 60px;
+    top: 567px;
+    left: 300px;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 10px;
+}
