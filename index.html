@@ -29,5 +29,132 @@
             <button class="button answers__forms__button">Бланки Ответов</button>
         </div>
     </div>
+
+    <div class="my__classes">
+        <div class="my__classes-title">
+            <p>Мои Классы</p>
+        </div>
+
+        <div class="my__classes-list">
+            <div class="my__classes-list-name">
+                <p><strong>Название</strong></p>
+                <div class="class__name__list" id="class-name-list">
+                    <a onclick="showCurrentClassStudents()">3 "А"</a>
+                    <a onclick="showCurrentClassStudents()">3 "Б"</a>
+                    <a onclick="showCurrentClassStudents()">3 "В"</a>
+                </div>
+            </div>
+
+            <div class="my__classes-list-student-count">
+                <p><strong>Кол-Во</strong></p>
+                <div class="student__count__list" id="student-count-list">
+                    <a>0/30</a>
+                    <a>0/30</a>
+                    <a>0/30</a>
+                </div>
+            </div>
+
+            <div class="my__classes-list-add-student-button">
+                <p><strong>&nbsp;</strong></p>
+                <div class="add__student__buttons__list" id="add-student-buttons-list">
+                    <a onclick="addStudent()">+</a>
+                    <a onclick="addStudent()">+</a>
+                    <a onclick="addStudent()">+</a>
+                </div>
+            </div>
+
+            <div class="my__classes-list-delete-class-button">
+                <p><strong>&nbsp;</strong></p>
+                <div class="delete__class__buttons__list" id="delete-class-buttons-list">
+                    <a onclick="deleteClass()">×</a>
+                    <a onclick="deleteClass()">×</a>
+                    <a onclick="deleteClass()">×</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="students__list">
+            <div class="students__list-status">
+                <a>Учитель</a>
+                <a>Ученик</a>
+                <a>Ученик</a>
+                <a>Ученик</a>
+                <a>Ученик</a>
+                <a>Ученик</a>
+            </div>
+            
+            <div class="students__list-name-surname">
+                <a id="teacher">Сергей Седов</a>
+                <a id="student">Иван Иванов</a>
+                <a id="student">Андрей Андреев</a>
+                <a id="student">Алексей Макаров</a>
+                <a id="student">Василий Уткин</a>
+                <a id="student">Дмитрий Нагиев</a>
+            </div>
+
+            <div class="students__list-id">
+            </div>
+
+            <div class="students__list-delete-student-button">
+            </div>
+        </div>
+
+        <button class="button add_class_button" onclick="showAddClassForm()">Добавить Класс</button>
+    </div>
+
+    <div class="add__class__form" id="add-class-form">
+        <div class="add__class__form-title">
+            <p>Создание Класса</p>
+        </div>
+
+        <input type="text" placeholder="Название" class="input class_name_input" id="class-name-input">
+        <input type="text" placeholder="Кол-Во Учащихся В Классе" class="input students_count_input"
+            id="students-count-input">
+
+        <button class="button create_class_button" onclick="addClass()">Создать</button>
+        <span class="close close_add_class_form" onclick="closeAddClassForm()">&times;</span>
+    </div>
+
+    <div class="add__student__form" id="add-student-form">
+        <div class="add__student__form-title">
+            <p>Добавить Ученика</p>
+        </div>
+
+        <input type="text" placeholder="Имя" class="input student_name_input" id="student-name-input">
+        <input type="text" placeholder="Id Ученика" class="input student_id_input" id="student-id-input">
+
+        <button class="button add_student_button" onclick="addStudent()">Добавить</button>
+        <span class="close close_add_student_form" onclick="closeAddStudentForm()">&times;</span>
+    </div>
+
+    <div class="create__test__form" id="create-test-form">
+        <div class="create__test__form-title">
+            <p>Создание Теста</p>
+        </div>
+
+        <div class="classes__dropdown">
+            <button class="button classes_dropdown_button">Классы</button>
+            <div class="classes__dropdown-content">
+                <a>3 "А"</a>
+                <a>3 "Б"</a>
+                <a>3 "В"</a>
+            </div>
+        </div>
+
+        <input type="text" placeholder="Название теста" class="input test_name_input">
+
+        <div class="questions__number__dropdown">
+            <button class="button questions__number__dropdown__button">Кол-Во Вопросов</button>
+            <div class="questions__number__dropdown__content">
+                <a>20 Вопросов</a>
+                <a>40 Вопросов</a>
+                <a>60 Вопросов</a>
+            </div>
+        </div>
+
+        <button class="button create__test__button">Создать</button>
+        <span class="close" onclick="closeCreateTestForm()">&times;</span>
+    </div>
+
 </body>
 </html>
