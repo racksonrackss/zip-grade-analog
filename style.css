@@ -43,6 +43,12 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.header__profile ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .header__profile-image {
     width: 118.56px;
     height: 115.98px;
@@ -62,4 +68,392 @@ body {
     position: absolute;
     top: 44px;
     left: 192px;
+}
+
+.header__blackbar {
+    background: black;
+    height: 100px;
+    top: 145px;
+    position: relative;
+}
+
+.answers__forms__button {
+    width: 250px;
+    height: 60px;
+    top: 20px;
+    left: 71px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.my__classes {
+    position: relative;
+    width: 800px;
+    height: 650px;
+    top: 150px;
+    left: 59px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my__classes-title {
+    width: 250px;
+    height: 52px;
+    top: 75px;
+    left: 76px;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+}
+
+.my__classes-list {
+    width: 310px;
+    height: 320px;
+    position: absolute;
+    top: 154px;
+    left: 36px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my__classes-list-name {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    height: 51px;
+    width: 100px;
+    text-align: center;
+}
+
+.class__name__list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.class__name__list a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.class__name__list a:hover {
+    background-color: #BBBBBB;
+}
+
+.my__classes-list-student-count {
+    position: absolute;
+    left: 115px;
+    top: 15px;
+    height: 51px;
+    width: 100px;
+    text-align: center;
+}
+
+.student__count__list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.student__count__list a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my__classes-list-add-student-button {
+    position: absolute;
+    left: 215px;
+    top: 15px;
+    height: 51px;
+    width: 40px;
+    text-align: center;
+}
+
+.add__student__buttons__list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.add__student__buttons__list a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.my__classes-list-delete-class-button {
+    position: absolute;
+    left: 255px;
+    top: 15px;
+    height: 51px;
+    width: 40px;
+    text-align: center;
+}
+
+.delete__class__buttons__list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.delete__class__buttons__list a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.students__list {
+    width: 370px;
+    height: 320px;
+    position: absolute;
+    top: 154px;
+    left: 389px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add_class_button {
+    width: 224px;
+    height: 60px;
+    top: 540px;
+    left: 257px;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.add__class__form {
+    /* Показать окно добавления класса */
+    display: none;
+    position: absolute;
+    width: 750px;
+    height: 650px;
+    top: 295px;
+    left: 1111px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add__class__form-title {
+    width: 250px;
+    height: 52px;
+    top: 93px;
+    left: 250px;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+}
+
+.create_class_button {
+    width: 150px;
+    height: 60px;
+    top: 540px;
+    left: 301px;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.input {
+    border-radius: 10px;
+    border: 1px solid #E7EBF0;
+    background-color: #E7EBF0;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.class_name_input {
+    width: 427px;
+    height: 38px;
+    top: 187px;
+    left: 162px;
+}
+
+.students_count_input {
+    width: 427px;
+    height: 38px;
+    top: 253px;
+    left: 162px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.add__student__form {
+    /* Показать окно добавления студентов */
+    display: none;
+    position: absolute;
+    width: 750px;
+    height: 420px;
+    top: 293px;
+    left: 990px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add__student__form-title {
+    width: 250px;
+    height: 52px;
+    top: 60px;
+    left: 250px;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+}
+
+.student_name_input {
+    width: 427px;
+    height: 38px;
+    top: 154px;
+    left: 162px;
+}
+
+.student_id_input {
+    width: 427px;
+    height: 38px;
+    top: 220px;
+    left: 162px;
+}
+
+.add_student_button {
+    width: 150px;
+    height: 60px;
+    top: 300px;
+    left: 301px;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.create__test__form {
+    /* Показать окно добавления тестов */
+    display: none;
+    position: absolute;
+    width: 750px;
+    height: 650px;
+    top: 295px;
+    left: 1111px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create__test__form-title {
+    width: 250px;
+    height: 52px;
+    left: 250px;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+}
+
+.classes__dropdown {
+    display: inline-block;
+}
+
+.classes__dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.classes__dropdown a:hover {
+    background-color: #BBBBBB;
+}
+
+.classes_dropdown_button {
+    width: 427px;
+    height: 38px;
+    top: 67px;
+    left: 161px;
+    position: absolute;
+    font-size: 18px;
+    text-align: left;
+}
+
+.classes__dropdown-content {
+    display: none;
+    position: absolute;
+    width: 427px;
+    height: 138px;
+    top: 105px;
+    left: 161px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.classes__dropdown:hover .classes__dropdown-content {
+    display: block;
+}
+
+.test_name_input {
+    width: 427px;
+    height: 38px;
+    top: 288px;
+    left: 162px;
+}
+
+.questions__number__dropdown {
+    display: inline-block;
+}
+
+.questions__number__dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.questions__number__dropdown a:hover {
+    background-color: #BBBBBB;
+}
+
+.questions__number__dropdown__button {
+    width: 427px;
+    height: 38px;
+    top: 346px;
+    left: 161px;
+    position: absolute;
+    font-size: 18px;
+    text-align: left;
+}
+
+.questions__number__dropdown__content {
+    display: none;
+    position: absolute;
+    width: 427px;
+    height: 138px;
+    top: 384px;
+    left: 161px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.questions__number__dropdown:hover .questions__number__dropdown__content {
+    display: block;
+}
+
+.create__test__button {
+    width: 150px;
+    height: 60px;
+    top: 567px;
+    left: 300px;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 10px;
 }
