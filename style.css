@@ -12,7 +12,7 @@ body {
     transition: background-color 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Roboto, 'Source Sans Pro';
-    border: none;
+    border: #4e4e4e;
 }
 
 .button:hover {
@@ -87,6 +87,8 @@ body {
 }
 
 .my__classes {
+    /* Показать окно со списком классов и учеников */
+    display: none;
     position: relative;
     width: 800px;
     height: 650px;
@@ -456,4 +458,222 @@ body {
     position: absolute;
     font-size: 18px;
     border-radius: 10px;
+}
+
+.teacher__profile {
+    /* Показать окно профиля учителя */
+    display: none;
+    position: absolute;
+    width: 1100px;
+    height: 650px;
+    top: 295px;
+    left: 59px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.teacher__profile-title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 250px;
+    height: 37px;
+    top: 25px;
+    left: 25px;
+    font-size: 24px;
+}
+
+.teacher__profile-blackbar {
+    position: absolute;
+    background: black;
+    height: 50px;
+    top: 73px;
+    left: 0;
+    width: 100%;
+}
+
+.teacher__profile-info {
+    border-radius: 10px; 
+    position: relative;
+    width: 395px;
+    height: 380px;
+    top: 160px;
+    left: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.teacher__profile-info,
+.teacher__profile-info * {
+    box-sizing: border-box;
+}
+
+.teacher__profile-info label {
+    margin-top: 23px;
+    padding: 10px;
+}
+
+.teacher__profile-info input {
+    margin-top: 23px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(231, 235, 240, 1);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.teacher__profile-info input:hover {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.7);
+}
+
+.teacher__profile-tests {
+    border-radius: 10px; 
+    position: absolute;
+    width: 412px;
+    height: 380px;
+    top: 160px;
+    left: 444px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.teacher__profile-tests-title {
+    width: 172px;
+    height: 52px;
+    left: 119px;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+}
+
+.teacher__profile-tests-list {
+    display: flex;
+    position: relative;
+    width: 355px;
+    height: 180px;
+    top: 52px;
+    left: 28px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.teacher__profile-tests-list li {
+    padding: 10px;
+    list-style-type: none;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+
+.teacher__profile-tests-list li:hover {
+    background-color: #BBBBBB;
+}
+
+.open_test_button {
+    width: 150px;
+    height: 60px;
+    top: 278px;
+    left: 130px;
+    position: absolute;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+.teacher-profile-logout-button {
+    width: 150px;
+    height: 60px;
+    top: 574px;
+    left: 20px;
+    position: absolute;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+.to-main-page-button {
+    width: 150px;
+    height: 60px;
+    top: 574px;
+    left: 190px;
+    position: absolute;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+.test__menu {
+    /* Показать меню теста */
+    /* display: none; */
+    position: absolute;
+    width: 750px;
+    height: 650px;
+    top: 295px;
+    left: 1111px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.test__menu-title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 172px;
+    height: 52px;
+    top: 42px;
+    left: 290px;
+    font-size: 24px;   
+}
+
+.test__menu-inputs {
+    border-radius: 10px; 
+    position: relative;
+    width: 380px;
+    height: 217px;
+    top: 124px;
+    left: 140px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.configure-keys-button {
+    width: 180px;
+    height: 40px;
+    top: 364px;
+    left: 285px;
+    position: absolute;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+.results-button {
+    width: 180px;
+    height: 40px;
+    top: 427px;
+    left: 285px;
+    position: absolute;
+    font-size: 18px;
+    text-align: center; 
+    border-radius: 10px;  
+}
+
+.to-profile-page-button {
+    width: 150px;
+    height: 60px;
+    top: 490px;
+    left: 300px;
+    position: absolute;
+    font-size: 18px;
+    text-align: center; 
+    border-radius: 10px; 
 }
