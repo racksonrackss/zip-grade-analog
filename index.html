@@ -223,7 +223,7 @@
             <p>Создание Теста</p>
         </div>
 
-        <select name="class__name__select">
+        <select class="class__name__select">
             <option value="">Классы</option>
             <option value="value1">3 "А"</option>
             <option value="value2">3 "Б"</option>
@@ -234,14 +234,12 @@
 
         <input type="text" placeholder="Название теста" class="input test_name_input">
 
-        <div class="questions__number__dropdown">
-            <button class="button questions__number__dropdown__button">Кол-Во Вопросов</button>
-            <div class="questions__number__dropdown__content">
-                <a>20 Вопросов</a>
-                <a>40 Вопросов</a>
-                <a>60 Вопросов</a>
-            </div>
-        </div>
+        <select class="questions__number__select">
+            <option value="">Кол-Во Вопросов</option>
+            <option value="20-questions">20 Вопросов</option>
+            <option value="40-questions">40 Вопросов</option>
+            <option value="60-questions">60 Вопросов</option>
+        </select>
 
         <button class="button create__test__button">Создать</button>
         <span class="close" onclick="closeCreateTestForm()">&times;</span>
