@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainNotInAccount</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A500%2C700"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__blackbar">
+            <button class="button answers__forms__button">Бланки Ответов</button>
+        </div>
+        <button class="button header__login_button">Войти</button>
+        <button class="button header__register_button">Новый Аккаунт</button>
+    </div>
+
+    <div class="registration__form">
+        <div class="registration__form-title">
+            <p>Создание Нового Аккаунта</p>
+        </div>
+
+        <input type="text" placeholder="Фамилия" class="input user_surname_input">
+        <input type="text" placeholder="Имя" class="input user_name_input">
+        <input type="text" placeholder="Отчество" class="input user_patronymic">
+        <input type="text" placeholder="✉ Почта" class="input user_email_input">
+        <input type="text" placeholder="✔ Пароль" class="input user_password_input">
+
+        <button class="button registration_button">Зарегистрироваться</button>
+        <span class="close">&times;</span>
+        <button class="have_an_account_button">У вас уже есть аккаунт?</button>
+    </div>
+
+    <div class="login__form">
+        <div class="login__form-title">
+            <p>Вход</p>
+        </div>
+
+        <input type="text" placeholder="✉ Почта" class="input user_log_email_input">
+        <input type="text" placeholder="✔ Пароль" class="input user_log_password_input">
+        <button class="button login_button">Войти</button>
+        <span class="close">&times;</span>
+        <button class="want_to_create_button">Хотите создать аккаунт?</button>
+        <button class="forget_password_button">Забыли Пароль?</button>
+    </div>
+
+    <div class="reset__password__form">
+        <div class="reset__password__form-title">
+            <p>Сброс Пароля</p>
+        </div>
+
+        <input type="text" placeholder="✉ Почта" class="input reset_email_input">
+        <input type="text" placeholder="✔ Код" class="input reset_code_input">
+        <button class="button send_code_button">Отправить Код</button>
+        <span class="close">&times;</span>
+        <button class="button reset_password_button">Отправить</button>
+    </div>
+
+    <div class="change__password__form">
+        <div class="change__password__form-title">
+            <p>Смена Пароля</p>
+        </div>
+
+        <input type="text" placeholder="Новый Пароль" class="input new_password_input">
+        <input type="text" placeholder="Подтвердите Пароль" class="input confirm_new_password_input">
+
+        <span class="close">&times;</span>
+        <button class="button change_password_button">Сменить</button>
+    </div>
+</body>
+</html>
