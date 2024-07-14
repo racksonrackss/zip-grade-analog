@@ -118,97 +118,52 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.my__classes-list-name {
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    height: 51px;
-    width: 100px;
-    text-align: center;
+.my__classes-list table {
+    border-spacing: 26px;
+    color: rgba(65, 75, 90, 1);
+    display: block;
 }
 
-.class__name__list {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+.my__classes-list table tbody {
+    display: block;
+    overflow-y: auto;
+    max-height: 240px;
 }
 
-.class__name__list a {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.my__classes-list-button {
     cursor: pointer;
     transition: background-color 0.3s;
+    border: #4e4e4e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #E7EBF0;
     border-radius: 10px;
 }
 
-.class__name__list a:hover {
+.my__classes-list-button:hover {
     background-color: #BBBBBB;
 }
 
-.my__classes-list-student-count {
-    position: absolute;
-    left: 115px;
-    top: 15px;
-    height: 51px;
-    width: 100px;
-    text-align: center;
-}
-
-.student__count__list {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.student__count__list a {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.my__classes-list-add-student-button {
-    position: absolute;
-    left: 215px;
-    top: 15px;
-    height: 51px;
-    width: 40px;
-    text-align: center;
-}
-
-.add__student__buttons__list {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.add__student__buttons__list a {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.class_name {
     cursor: pointer;
+    transition: color 0.3s;
 }
 
-.my__classes-list-delete-class-button {
-    position: absolute;
-    left: 255px;
-    top: 15px;
-    height: 51px;
-    width: 40px;
-    text-align: center;
+.class_name:hover {
+    color: #BBBBBB;
 }
 
-.delete__class__buttons__list {
-    align-items: center;
-    justify-content: center;
+.class_name_column {
     display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: 8px;
 }
 
-.delete__class__buttons__list a {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
+.student_count_column {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 86px;
 }
 
 .students__list {
@@ -221,6 +176,77 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.students__list-class-name-title {
+    width: 370px;
+    height: 29px;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+}
+
+.students__list table {
+    color: rgba(65, 75, 90, 1);
+    width: 370px;
+    height: 273px;
+    border-spacing: 12px;
+    flex-direction: column;
+    display: flex;
+}
+
+.students__list table thead {
+    position: absolute;
+    height: 50px;
+    width: 370px;
+}
+
+.status_column {
+    display: flex;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.name_column {
+    display: flex;
+    position: absolute;
+    top: 12px;
+    left: 88px;
+}
+
+.id_column {
+    display: flex;
+    position: absolute;
+    top: 12px;
+    left: 255px;
+}
+
+.delete_button_column {
+    display: flex;
+    position: absolute;
+    top: 12px;
+    left: 312px;
+}
+
+.students__list table tbody {
+    display: block;
+    overflow-y: auto;
+    max-height: 214px;
+    margin-top: 50px;
+}
+
+.students__list-delete-student-button {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: #4e4e4e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #E7EBF0;
+    border-radius: 10px;
+}
+
+.students__list-delete-student-button:hover {
+    background-color: #BBBBBB;
+}
+
 .add_class_button {
     width: 224px;
     height: 60px;
@@ -228,6 +254,101 @@ body {
     left: 257px;
     border-radius: 100px;
     position: absolute;
+}
+
+.delete__class__confirmation {
+    /* Показать окно подтверждения удаления класса */
+    display: none;
+    position: absolute;
+    width: 750px;
+    height: 270px;
+    top: 501px;
+    left: 484px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.delete__class__confirmation-title {
+    font-size: 24px;
+    width: 750px;
+    height: 52px;
+    top: 60px;
+    position: relative;
+    text-align: center;
+}
+
+.confirm_class_deletion_button {
+    width: 150px;
+    height: 60px;
+    top: 175px;
+    left: 150px;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgba(212, 109, 109, 1);
+    transition: background-color 0.3s;
+}
+
+.confirm_class_deletion_button:hover {
+    background-color: rgb(145, 71, 71);
+}
+
+.reject_class_deletion_button {
+    width: 150px;
+    height: 60px;
+    top: 175px;
+    left: 450px;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+
+.delete__student__confirmation {
+    /* Показать окно подтверждения удаления студента */
+    display: none;
+    position: absolute;
+    width: 750px;
+    height: 270px;
+    top: 501px;
+    left: 484px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.delete__student__confirmation-title {
+    font-size: 24px;
+    width: 750px;
+    height: 52px;
+    top: 60px;
+    position: relative;
+    text-align: center;
+}
+
+.confirm_student_deletion_button {
+    width: 150px;
+    height: 60px;
+    top: 175px;
+    left: 150px;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgba(212, 109, 109, 1);
+    transition: background-color 0.3s;
+}
+
+.confirm_student_deletion_button:hover {
+    background-color: rgb(145, 71, 71);
+}
+
+.reject_student_deletion_button {
+    width: 150px;
+    height: 60px;
+    top: 175px;
+    left: 450px;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
 .add__class__form {
@@ -513,6 +634,8 @@ body {
 .teacher__profile-info label {
     margin-top: 23px;
     padding: 10px;
+    margin-right: 20px;
+    position: absolute;
 }
 
 .teacher__profile-info input {
@@ -523,6 +646,7 @@ body {
     background-color: rgba(231, 235, 240, 1);
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease;
+    margin-left: 104px;
 }
 
 .teacher__profile-info input:hover {
@@ -611,7 +735,7 @@ body {
 
 .test__menu {
     /* Показать меню теста */
-    /* display: none; */
+    display: none;
     position: absolute;
     width: 750px;
     height: 650px;
@@ -632,7 +756,7 @@ body {
     font-size: 24px;   
 }
 
-.test__menu-inputs {
+.test__menu-info {
     border-radius: 10px; 
     position: relative;
     width: 380px;
@@ -643,6 +767,32 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.test__menu-info,
+.test__menu-info * {
+    box-sizing: border-box;
+}
+
+.test__menu-info label {
+    margin-top: 23px;
+    padding: 10px;
+    position: absolute;
+}
+
+.test__menu-info input {
+    margin-left: 145px;
+    margin-top: 23px;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(231, 235, 240, 1);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.test__menu-info input:hover {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.7);
 }
 
 .configure-keys-button {
