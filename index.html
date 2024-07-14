@@ -36,70 +36,161 @@
         </div>
 
         <div class="my__classes-list">
-            <div class="my__classes-list-name">
-                <p><strong>Название</strong></p>
-                <div class="class__name__list" id="class-name-list">
-                    <a onclick="showCurrentClassStudents()">3 "А"</a>
-                    <a onclick="showCurrentClassStudents()">3 "Б"</a>
-                    <a onclick="showCurrentClassStudents()">3 "В"</a>
-                </div>
-            </div>
-
-            <div class="my__classes-list-student-count">
-                <p><strong>Кол-Во</strong></p>
-                <div class="student__count__list" id="student-count-list">
-                    <a>0/30</a>
-                    <a>0/30</a>
-                    <a>0/30</a>
-                </div>
-            </div>
-
-            <div class="my__classes-list-add-student-button">
-                <p><strong>&nbsp;</strong></p>
-                <div class="add__student__buttons__list" id="add-student-buttons-list">
-                    <a onclick="addStudent()">+</a>
-                    <a onclick="addStudent()">+</a>
-                    <a onclick="addStudent()">+</a>
-                </div>
-            </div>
-
-            <div class="my__classes-list-delete-class-button">
-                <p><strong>&nbsp;</strong></p>
-                <div class="delete__class__buttons__list" id="delete-class-buttons-list">
-                    <a onclick="deleteClass()">×</a>
-                    <a onclick="deleteClass()">×</a>
-                    <a onclick="deleteClass()">×</a>
-                </div>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="class_name_column">Название</th>
+                        <th class="student_count_column">Кол-Во</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="class_name" onclick="showCurrentClassStudents()">3 "А"</td>
+                        <td>10/30</td>
+                        <td><button class="my__classes-list-button add-student-button">+</button></td>
+                        <td><button class="my__classes-list-button delete-class-button">×</button></td>
+                    </tr>
+                    <tr>
+                        <td class="class_name" onclick="showCurrentClassStudents()">3 "Б"</td>
+                        <td>25/25</td>
+                        <td><button class="my__classes-list-button add-student-button">+</button></td>
+                        <td><button class="my__classes-list-button delete-class-button">×</button></td>
+                    </tr>
+                    <tr>
+                        <td class="class_name" onclick="showCurrentClassStudents()">3 "В"</td>
+                        <td>10/15</td>
+                        <td><button class="my__classes-list-button add-student-button">+</button></td>
+                        <td><button class="my__classes-list-button delete-class-button">×</button></td>
+                    </tr>
+                    <tr>
+                        <td class="class_name" onclick="showCurrentClassStudents()">3 "Г"</td>
+                        <td>0/20</td>
+                        <td><button class="my__classes-list-button add-student-button">+</button></td>
+                        <td><button class="my__classes-list-button delete-class-button">×</button></td>
+                    </tr>
+                    <tr>
+                        <td class="class_name" onclick="showCurrentClassStudents()">4 "А"</td>
+                        <td>0/25</td>
+                        <td><button class="my__classes-list-button add-student-button">+</button></td>
+                        <td><button class="my__classes-list-button delete-class-button">×</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="students__list">
-            <div class="students__list-status">
-                <a>Учитель</a>
-                <a>Ученик</a>
-                <a>Ученик</a>
-                <a>Ученик</a>
-                <a>Ученик</a>
-                <a>Ученик</a>
+            <div class="students__list-class-name-title">
+                <p><strong>3 "A"</strong></p>
             </div>
-            
-            <div class="students__list-name-surname">
-                <a id="teacher">Сергей Седов</a>
-                <a id="student">Иван Иванов</a>
-                <a id="student">Андрей Андреев</a>
-                <a id="student">Алексей Макаров</a>
-                <a id="student">Василий Уткин</a>
-                <a id="student">Дмитрий Нагиев</a>
-            </div>
-
-            <div class="students__list-id">
-            </div>
-
-            <div class="students__list-delete-student-button">
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="status_column">Статус</th>
+                        <th class="name_column">Имя Фамилия</th>
+                        <th class="id_column">ID</th>
+                        <th class="delete_button_column"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Учитель</td>
+                        <td>Сергей Седов</td>
+                        <td>000001</td>
+                        <td><button class="students__list-delete-student-button">&times;</button>
+                    </tr>
+                    <tr>
+                        <td>Ученик</td>
+                        <td>Иван Иванов</td>
+                        <td>000002</td>
+                        <td><button class="students__list-delete-student-button">&times;</button>
+                    </tr>
+                    <tr>
+                        <td>Ученик</td>
+                        <td>Андрей Андреев</td>
+                        <td>000003</td>
+                        <td><button class="students__list-delete-student-button">&times;</button>
+                    </tr>
+                    <tr>
+                        <td>Ученик</td>
+                        <td>Алексей Макаров</td>
+                        <td>000004</td>
+                        <td><button class="students__list-delete-student-button">&times;</button>
+                    </tr>
+                    <tr>
+                        <td>Ученик</td>
+                        <td>Василий Уткин</td>
+                        <td>000005</td>
+                        <td><button class="students__list-delete-student-button">&times;</button>
+                    </tr>
+                    <tr>
+                        <td>Ученик</td>
+                        <td>Дмитрий Нагиев</td>
+                        <td>000006</td>
+                        <td><button class="students__list-delete-student-button">&times;</button>
+                    </tr>
+                    <tr>
+                        <td>Ученик</td>
+                        <td>Алексей Макаров</td>
+                        <td>000007</td>
+                        <td><button class="students__list-delete-student-button">&times;</button>
+                    </tr>
+                    <tr>
+                        <td>Ученик</td>
+                        <td>Василий Уткин</td>
+                        <td>000008</td>
+                        <td><button class="students__list-delete-student-button">&times;</button>
+                    </tr>
+                    <tr>
+                        <td>Ученик</td>
+                        <td>Дмитрий Нагиев</td>
+                        <td>000009</td>
+                        <td><button class="students__list-delete-student-button">&times;</button>
+                    </tr>
+                    <tr>
+                        <td>Ученик</td>
+                        <td>Алексей Макаров</td>
+                        <td>000010</td>
+                        <td><button class="students__list-delete-student-button">&times;</button>
+                    </tr>
+                    <tr>
+                        <td>Ученик</td>
+                        <td>Василий Уткин</td>
+                        <td>000011</td>
+                        <td><button class="students__list-delete-student-button">&times;</button>
+                    </tr>
+                    <tr>
+                        <td>Ученик</td>
+                        <td>Дмитрий Нагиев</td>
+                        <td>000012</td>
+                        <td><button class="students__list-delete-student-button">&times;</button>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <button class="button add_class_button" onclick="showAddClassForm()">Добавить Класс</button>
+    </div>
+
+    <div class="delete__class__confirmation">
+        <div class="delete__class__confirmation-title">
+            <p>Вы точно хотите удалить класс "Название"?</p>
+        </div>
+
+        <button class="button confirm_class_deletion_button">Да, удалить</button>
+        <button class="button reject_class_deletion_button">Нет</button>
+        <span class="close" onclick="closeDeleteClassConfirmation()">&times;</span>
+    </div>
+
+    <div class="delete__student__confirmation">
+        <div class="delete__student__confirmation-title">
+            <p>Вы точно хотите удалить ученика "ID"?</p>
+        </div>
+
+        <button class="button confirm_student_deletion_button">Да, удалить</button>
+        <button class="button reject_student_deletion_button">Нет</button>
+        <span class="close" onclick="closeDeleteStudentConfirmation()">&times;</span>
     </div>
 
     <div class="add__class__form" id="add-class-form">
@@ -112,7 +203,7 @@
             id="students-count-input">
 
         <button class="button create_class_button" onclick="addClass()">Создать</button>
-        <span class="close close_add_class_form" onclick="closeAddClassForm()">&times;</span>
+        <span class="close" onclick="closeAddClassForm()">&times;</span>
     </div>
 
     <div class="add__student__form" id="add-student-form">
@@ -124,7 +215,7 @@
         <input type="text" placeholder="Id Ученика" class="input student_id_input" id="student-id-input">
 
         <button class="button add_student_button" onclick="addStudent()">Добавить</button>
-        <span class="close close_add_student_form" onclick="closeAddStudentForm()">&times;</span>
+        <span class="close" onclick="closeAddStudentForm()">&times;</span>
     </div>
 
     <div class="create__test__form" id="create-test-form">
@@ -158,7 +249,7 @@
 
     <div class="teacher__profile">
         <div class="teacher__profile-title">
-            <p>Профиль</p>
+            <p><strong>Профиль</strong></p>
         </div>
 
         <div class="teacher__profile-blackbar">
@@ -198,7 +289,7 @@
 
         <div class="teacher__profile-tests">
             <div class="teacher__profile-tests-title">
-                <p>Тесты</p>
+                <p><strong>Тесты</strong></p>
             </div>
 
             <div class="teacher__profile-tests-list">
@@ -220,10 +311,10 @@
 
     <div class="test__menu">
         <div class="test__menu-title">
-            <p>Тест Меню</p>
+            <p><strong>Тест Меню</strong></p>
         </div>
 
-        <div class="test__menu-inputs">
+        <div class="test__menu-info">
             <form>
                 <label for="test_name">Название</label>
                 <input type="text" id="test_name" value="Умножение">
