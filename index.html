@@ -212,7 +212,7 @@
         </div>
 
         <input type="text" placeholder="Имя" class="input student_name_input" id="student-name-input">
-        <input type="text" placeholder="Id Ученика" class="input student_id_input" id="student-id-input">
+        <input type="text" placeholder="Фамилия" class="input student_surname_input" id="student-surname-input">
 
         <button class="button add_student_button" onclick="addStudent()">Добавить</button>
         <span class="close" onclick="closeAddStudentForm()">&times;</span>
@@ -223,14 +223,14 @@
             <p>Создание Теста</p>
         </div>
 
-        <div class="classes__dropdown">
-            <button class="button classes_dropdown_button">Классы</button>
-            <div class="classes__dropdown-content">
-                <a>3 "А"</a>
-                <a>3 "Б"</a>
-                <a>3 "В"</a>
-            </div>
-        </div>
+        <select name="class__name__select">
+            <option value="">Классы</option>
+            <option value="value1">3 "А"</option>
+            <option value="value2">3 "Б"</option>
+            <option value="value2">3 "В"</option>
+            <option value="value2">3 "Г"</option>
+            <option value="value2">4 "А"</option>
+        </select>
 
         <input type="text" placeholder="Название теста" class="input test_name_input">
 
