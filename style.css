@@ -775,3 +775,279 @@ select:focus {
     text-align: center; 
     border-radius: 10px; 
 }
+
+.header__login_button {
+    top: 50px;
+    left: 1320px;
+    width: 250px;
+    height: 60px;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.header__register_button {
+    top: 50px;
+    left: 1620px;
+    width: 250px;
+    height: 60px;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.registration__form {
+    /* Показать окно регистрации */
+    display: none;
+    position: absolute;
+    width: 750px;
+    height: 600px;
+    top: 295px;
+    left: 585px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration__form-title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 318px;
+    height: 62px;
+    top: 18px;
+    left: 262px;
+    font-size: 24px;
+}
+
+.user_surname_input {
+    width: 300px;
+    height: 38px;
+    top: 163px;
+    left: 406px;
+}
+
+.user_name_input {
+    width: 300px;
+    height: 38px;
+    top: 227px;
+    left: 406px;
+}
+
+.user_patronymic {
+    width: 300px;
+    height: 38px;
+    top: 291px;
+    left: 406px;
+}
+
+.user_email_input {
+    width: 300px;
+    height: 38px;
+    top: 227px;
+    left: 44px;
+}
+
+.user_password_input {
+    width: 300px;
+    height: 38px;
+    top: 290px;
+    left: 44px;
+}
+
+.registration_button {
+    top: 369px;
+    left: 250px;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 18px;
+}
+
+.have_an_account_button {
+    top: 454px;
+    left: 228px;
+    width: 294px;
+    height: 27px;
+    position: absolute;
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login__form {
+        /* Показать окно входа в аккаунт */
+    display: none;
+    position: absolute;
+    width: 750px;
+    height: 600px;
+    top: 295px;
+    left: 585px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login__form-title {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    width: 172px;
+    height: 52px;
+    top: 93px;
+    left: 289px;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.user_log_email_input {
+    width: 427px;
+    height: 38px;
+    top: 176px;
+    left: 162px;
+}
+
+.user_log_password_input {
+    width: 427px;
+    height: 38px;
+    top: 243px;
+    left: 162px;
+}
+
+.login_button {
+    top: 312px;
+    left: 300px;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 18px;
+}
+
+.want_to_create_button {
+    top: 399px;
+    left: 228px;
+    width: 294px;
+    height: 27px;
+    position: absolute;
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.forget_password_button {
+    top: 454px;
+    left: 228px;
+    width: 294px;
+    height: 27px;
+    position: absolute;
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.reset__password__form {
+    /* Показать окно сброса пароля */
+    display: none;
+    position: absolute;
+    width: 750px;
+    height: 500px;
+    top: 295px;
+    left: 585px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reset__password__form-title {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    width: 227px;
+    height: 52px;
+    top: 93px;
+    left: 168px;
+    font-size: 24px;
+    display: inline-block;    
+}
+
+.reset_email_input {
+    width: 427px;
+    height: 38px;
+    top: 176px;
+    left: 68px;
+}
+
+.reset_code_input {
+    width: 427px;
+    height: 38px;
+    top: 243px;
+    left: 68px;
+}
+
+.send_code_button {
+    top: 176px;
+    left: 510px;
+    width: 150px;
+    height: 38px;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 18px;   
+}
+
+.reset_password_button {
+    top: 312px;
+    left: 206px;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 18px; 
+}
+
+.change__password__form {
+    /* Показать окно смены пароля */
+    display: none;
+    position: absolute;
+    width: 750px;
+    height: 500px;
+    top: 295px;
+    left: 585px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.change__password__form-title {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    width: 227px;
+    height: 52px;
+    top: 93px;
+    left: 168px;
+    font-size: 24px;
+    display: inline-block;  
+}
+
+.new_password_input {
+    width: 426px;
+    height: 38px;
+    top: 176px;
+    left: 68px;
+}
+
+.confirm_new_password_input {
+    width: 426px;
+    height: 38px;
+    top: 243px;
+    left: 68px;
+}
+
+.change_password_button {
+    top: 312px;
+    left: 206px;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 18px; 
+}
