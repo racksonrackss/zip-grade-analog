@@ -88,7 +88,7 @@ body {
 
 .my__classes {
     /* Показать окно со списком классов и учеников */
-    display: none;
+    /* display: none; */
     position: relative;
     width: 800px;
     height: 650px;
@@ -1050,4 +1050,366 @@ select:focus {
     border-radius: 10px;
     position: absolute;
     font-size: 18px; 
+}
+
+.results__form {
+    position: absolute;
+    width: 750px;
+    height: 650px;
+    top: 295px;
+    left: 59px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results__form-title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 172px;
+    height: 52px;
+    top: 42px;
+    left: 290px;
+    font-size: 24px;   
+}
+
+.results__form-list-title {
+    display: flex;
+    align-items: center;
+    width: 370px;
+    height: 29px;
+    text-align: center;
+    position: relative;
+}
+
+.results__form-list-title p {
+    position: absolute;
+    left: 50%;
+}
+
+.results__form-list {
+    width: 457px;
+    height: 320px;
+    position: absolute;
+    top: 132px;
+    left: 43px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results__form-list table {
+    border-spacing: 17px;
+    color: rgba(65, 75, 90, 1);
+    display: block;
+}
+
+.results__form-list table tbody {
+    display: block;
+    overflow-y: auto;
+    max-height: 230px;
+}
+
+.student_id_column {
+    display: flex;
+    position: absolute;
+    left: 157px;
+}
+
+.student_points_column {
+    display: flex;
+    position: absolute;
+    left: 210px;
+}
+
+.student_correctness_column {
+    display: flex;
+    position: absolute;
+    left: 272px;
+}
+
+.student_name {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.student_name:hover {
+    color: #BBBBBB;
+}
+
+.test__keys {
+    color: rgba(65, 75, 90, 1);
+}
+
+.test__key {
+    position: absolute;
+    width: 338px;
+    height: 37px;
+    border: 2px solid rgba(65, 75, 90, 1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.test__key-number {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+}
+
+.answer_option {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid rgba(65, 75, 90, 1); /* Цвет и толщина границы */
+    display: grid;
+    place-items: center;
+}
+
+.answer_option p {
+    position: absolute;
+    font-size: 22px;
+}
+
+.test__key-task-grade {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    font-size: 22px;
+    left: 291px;
+    display: grid;
+    place-items: center;
+}
+
+.wrong {
+    background-color: red;
+}
+
+.right {
+    background-color: green;
+}
+
+.partly {
+    background-color: yellow;
+}
+
+.key_option_a {
+    left: 47px;
+}
+
+.key_option_b {
+    left: 94px;
+}
+
+.key_option_c {
+    left: 141px;
+}
+
+.key_option_d {
+    left: 188px;
+}
+
+.key_option_e {
+    left: 235px;
+}
+
+.first_key {
+    top: 255px;
+    left: 848px;
+}
+
+.second_key {
+    top: 297px;
+    left: 848px;
+}
+
+.third_key {
+    top: 339px;
+    left: 848px;
+}
+
+.fourth_key {
+    top: 381px;
+    left: 848px;
+}
+
+.fifth_key {
+    top: 423px;
+    left: 848px;
+}
+
+.sixth_key {
+    top: 465px;
+    left: 848px;
+}
+
+.seventh_key {
+    top: 507px;
+    left: 848px;
+}
+
+.eighth_key {
+    top: 549px;
+    left: 848px;
+}
+
+.ninth_key {
+    top: 591px;
+    left: 848px;
+}
+
+.tenth_key {
+    top: 633px;
+    left: 848px;
+}
+
+.eleventh_key {
+    top: 675px;
+    left: 848px;
+}
+
+.twelfth_key {
+    top: 717px;
+    left: 848px;
+}
+
+.thirteenth_key {
+    top: 759px;
+    left: 848px;
+}
+
+.fourteenth_key {
+    top: 801px;
+    left: 848px;
+}
+
+.fifteenth_key {
+    top: 843px;
+    left: 848px;
+}
+
+.sixteenth_key {
+    top: 255px;
+    left: 1206px;
+}
+
+.seventeenth_key {
+    top: 297px;
+    left: 1206px;
+}
+
+.eighteenth_key {
+    top: 339px;
+    left: 1206px;
+}
+
+.nineteenth_key {
+    top: 381px;
+    left: 1206px;
+}
+
+.twentieth_key {
+    top: 423px;
+    left: 1206px;
+}
+
+.twenty_first_key {
+    top: 465px;
+    left: 1206px;
+}
+
+.twenty_second_key {
+    top: 507px;
+    left: 1206px;
+}
+
+.twenty_third_key {
+    top: 549px;
+    left: 1206px;
+}
+
+.twenty_fourth_key {
+    top: 591px;
+    left: 1206px;
+}
+
+.twenty_fifth_key {
+    top: 633px;
+    left: 1206px;
+}
+
+.twenty_sixth_key {
+    top: 675px;
+    left: 1206px;
+}
+
+.twenty_seventh_key {
+    top: 717px;
+    left: 1206px;
+}
+
+.twenty_eighth_key {
+    top: 759px;
+    left: 1206px;
+}
+
+.twenty_ninth_key {
+    top: 801px;
+    left: 1206px;
+}
+
+.thirtieth_key {
+    top: 843px;
+    left: 1206px;
+}
+
+.thirty_first_key {
+    top: 255px;
+    left: 1564px;
+}
+
+.thirty_second_key {
+    top: 297px;
+    left: 1564px;
+}
+
+.thirty_third_key {
+    top: 339px;
+    left: 1564px;
+}
+
+.thirty_fourth_key {
+    top: 381px;
+    left: 1564px;
+}
+
+.thirty_fifth_key {
+    top: 423px;
+    left: 1564px;
+}
+
+.thirty_sixth_key {
+    top: 465px;
+    left: 1564px;
+}
+
+.thirty_seventh_key {
+    top: 507px;
+    left: 1564px;
+}
+
+.thirty_eighth_key {
+    top: 549px;
+    left: 1564px;
+}
+
+.thirty_ninth_key {
+    top: 591px;
+    left: 1564px;
+}
+
+.fortieth_key {
+    top: 633px;
+    left: 1564px;
 }
