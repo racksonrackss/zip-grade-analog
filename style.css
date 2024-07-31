@@ -1162,9 +1162,11 @@ select:focus {
     height: 35px;
     border-radius: 50%;
     position: absolute;
-    border: 2px solid rgba(65, 75, 90, 1); /* Цвет и толщина границы */
+    border: 2px solid rgba(65, 75, 90, 1);
     display: grid;
     place-items: center;
+    background-color: rgba(195, 195, 195, 1);
+    ;
 }
 
 .answer_option p {
@@ -1183,15 +1185,16 @@ select:focus {
 }
 
 .wrong {
-    background-color: red;
+    background-color: rgba(184, 32, 32, 1);
+    ;
 }
 
 .right {
-    background-color: green;
+    background-color: rgba(33, 165, 0, 1);
 }
 
 .partly {
-    background-color: yellow;
+    background-color: rgba(215, 177, 43, 1);
 }
 
 .key_option_a {
@@ -1412,4 +1415,414 @@ select:focus {
 .fortieth_key {
     top: 633px;
     left: 1564px;
+}
+
+.key__configuration__form {
+    position: relative;
+    width: 1900px;
+    height: 942px;
+    top: 88px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: rgba(65, 75, 90, 1);
+}
+
+.key__configuration__form-title {
+    position: absolute;
+    left: 45px;
+    top: 11px;
+    width: 1810px;
+    height: 52px;
+    font-size: 24px;
+    display: grid;
+    place-items: center;
+}
+
+.key__configuration__form-blackbar {
+    background: black;
+    width: 1900px;
+    height: 50px;
+    top: 73px;
+    position: absolute;
+}
+
+.key__configuration__form-max-score {
+    position: absolute;
+    top: 791px;
+    width: 359px;
+    height: 52px;
+    font-size: 24px;
+    display: grid;
+    place-items: center;
+}
+
+.save_configuration_button {
+    width: 150px;
+    height: 60px;
+    top: 831px;
+    left: 875px;
+    position: absolute;
+    font-size: 18px;
+    text-align: center; 
+    border-radius: 10px;
+}
+
+.configurable__key {
+    position: absolute;
+    width: 462px;
+    height: 37px;
+    border: 2px solid rgba(65, 75, 90, 1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.configurable__key-number {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+}
+
+.configurable__key-option {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid rgba(65, 75, 90, 1);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background: rgba(195, 195, 195, 1);
+}
+
+.configurable__key-option p {
+    position: absolute;
+    font-size: 22px;
+}
+
+.right_response {
+    background-color: rgba(33, 165, 0, 1);
+}
+
+.configurable__key-grade {
+    position: absolute;
+    width: 138px;
+    height: 26px;
+    font-size: 22px;
+    top: 5px;
+    left: 282px;
+    display: grid;
+    place-items: center;
+}
+
+.grade_input {
+    top: 3px;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    left: 415px;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.first_configurable_key {
+    top: 144px;
+    left: 11px;
+}
+
+.second_configurable_key {
+    top: 186px;
+    left: 11px;
+}
+
+.third_configurable_key {
+    top: 228px;
+    left: 11px;
+}
+
+.fourth_configurable_key {
+    top: 269px;
+    left: 11px;
+}
+
+.fifth_configurable_key {
+    top: 311px;
+    left: 11px;
+}
+
+.sixth_configurable_key {
+    top: 353px;
+    left: 11px;
+}
+
+.seventh_configurable_key {
+    top: 395px;
+    left: 11px;
+}
+
+.eighth_configurable_key {
+    top: 437px;
+    left: 11px;
+}
+
+.ninth_configurable_key {
+    top: 479px;
+    left: 11px;
+}
+
+.tenth_configurable_key {
+    top: 521px;
+    left: 11px;
+}
+
+.eleventh_configurable_key {
+    top: 563px;
+    left: 11px;
+}
+
+.twelfth_configurable_key {
+    top: 605px;
+    left: 11px;
+}
+
+.thirteenth_configurable_key {
+    top: 647px;
+    left: 11px;
+}
+
+.fourteenth_configurable_key {
+    top: 689px;
+    left: 11px;
+}
+
+.fifteenth_configurable_key {
+    top: 731px;
+    left: 11px;
+}
+
+.sixteenth_configurable_key {
+    top: 144px;
+    left: 483px;
+}
+
+.seventeenth_configurable_key {
+    top: 186px;
+    left: 483px;
+}
+
+.eighteenth_configurable_key {
+    top: 228px;
+    left: 483px;
+}
+
+.nineteenth_configurable_key {
+    top: 269px;
+    left: 483px;
+}
+
+.twentieth_configurable_key {
+    top: 311px;
+    left: 483px;
+}
+
+.twenty-first_configurable_key {
+    top: 353px;
+    left: 483px;
+}
+
+.twenty-second_configurable_key {
+    top: 395px;
+    left: 483px;
+}
+
+.twenty-third_configurable_key {
+    top: 437px;
+    left: 483px;
+}
+
+.twenty-fourth_configurable_key {
+    top: 479px;
+    left: 483px;
+}
+
+.twenty-fifth_configurable_key {
+    top: 521px;
+    left: 483px;
+}
+
+.twenty-sixth_configurable_key {
+    top: 563px;
+    left: 483px;
+}
+
+.twenty-seventh_configurable_key {
+    top: 605px;
+    left: 483px;
+}
+
+.twenty-eighth_configurable_key {
+    top: 647px;
+    left: 483px;
+}
+
+.twenty-ninth_configurable_key {
+    top: 689px;
+    left: 483px;
+}
+
+.thirtieth_configurable_key {
+    top: 731px;
+    left: 483px;
+}
+
+.thirty-first_configurable_key {
+    top: 144px;
+    left: 955px;
+}
+
+.thirty-second_configurable_key {
+    top: 186px;
+    left: 955px;
+}
+
+.thirty-third_configurable_key {
+    top: 228px;
+    left: 955px;
+}
+
+.thirty-fourth_configurable_key {
+    top: 269px;
+    left: 955px;
+}
+
+.thirty-fifth_configurable_key {
+    top: 311px;
+    left: 955px;
+}
+
+.thirty-sixth_configurable_key {
+    top: 353px;
+    left: 955px;
+}
+
+.thirty-seventh_configurable_key {
+    top: 395px;
+    left: 955px;
+}
+
+.thirty-eighth_configurable_key {
+    top: 437px;
+    left: 955px;
+}
+
+.thirty-ninth_configurable_key {
+    top: 479px;
+    left: 955px;
+}
+
+.fortieth_configurable_key {
+    top: 521px;
+    left: 955px;
+}
+
+.forty-first_configurable_key {
+    top: 563px;
+    left: 955px;
+}
+
+.forty-second_configurable_key {
+    top: 605px;
+    left: 955px;
+}
+
+.forty-third_configurable_key {
+    top: 647px;
+    left: 955px;
+}
+
+.forty-fourth_configurable_key {
+    top: 689px;
+    left: 955px;
+}
+
+.forty-fifth_configurable_key {
+    top: 731px;
+    left: 955px;
+}
+
+.forty-sixth_configurable_key {
+    top: 144px;
+    left: 1427px;
+}
+
+.forty-seventh_configurable_key {
+    top: 186px;
+    left: 1427px;
+}
+
+.forty-eighth_configurable_key {
+    top: 228px;
+    left: 1427px;
+}
+
+.forty-ninth_configurable_key {
+    top: 269px;
+    left: 1427px;
+}
+
+.fiftieth_configurable_key {
+    top: 311px;
+    left: 1427px;
+}
+
+.fifty-first_configurable_key {
+    top: 353px;
+    left: 1427px;
+}
+
+.fifty-second_configurable_key {
+    top: 395px;
+    left: 1427px;
+}
+
+.fifty-third_configurable_key {
+    top: 437px;
+    left: 1427px;
+}
+
+.fifty-fourth_configurable_key {
+    top: 479px;
+    left: 1427px;
+}
+
+.fifty-fifth_configurable_key {
+    top: 521px;
+    left: 1427px;
+}
+
+.fifty-sixth_configurable_key {
+    top: 563px;
+    left: 1427px;
+}
+
+.fifty-seventh_configurable_key {
+    top: 605px;
+    left: 1427px;
+}
+
+.fifty-eighth_configurable_key {
+    top: 647px;
+    left: 1427px;
+}
+
+.fifty-ninth_configurable_key {
+    top: 689px;
+    left: 1427px;
+}
+
+.sixtieth_configurable_key {
+    top: 731px;
+    left: 1427px;
 }
